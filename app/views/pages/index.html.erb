@@ -1,12 +1,15 @@
+<%= image_tag('https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80', style: "height: 60px; width:100%;") %>
 <div class="container pt-3">
+  <h1 class="text-center">Playing with RSpec</h1><hr>
   <div class="row">
     <div class="col-12">
       <h1>Setup Instructions:</h1>
       <h5>In order to view and interact with these tests, you will have:</h5>
       <ul>
         <li>Clone the repo locally using the following command in your terminal:</li>
-        <li>git clone https://github.com/LorenzoXavier/RSpec-examples.git</li>
+        <li><strong>$ git clone https://github.com/LorenzoXavier/RSpec-examples.git</strong></li>
         <li>You must then CD into the saved location</li>
+        <li>Run: <strong>$ bundle install</strong></li>
         <li>You can then run the commands as outlined in each of the indivdual examples below</li>
       </ul>
       <hr>
@@ -20,9 +23,9 @@
             <%= tile.title %>
           </div>
           <div class="card-body">
-            <p>Description: <%= tile.body %></p>
-            <p>Model link: <%= link_to "click to view model on github", tile.model_link, target: :_blank %></p>
-            <p>Spec link: <%= link_to "click to view spec on github", tile.spec_link, target: :_blank %></p>
+            <p><%= tile.body %></p><br>
+            <p><%= link_to "Click to view model on github", tile.model_link, target: :_blank %></p>
+            <p><%= link_to "Click to view spec on github", tile.spec_link, target: :_blank %></p>
           </div>
         </div>
       </div>
