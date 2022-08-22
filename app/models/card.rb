@@ -1,7 +1,10 @@
-class Card < ApplicationRecord
-  attr_reader :type
+class Card
+  attr_reader :rank, :suit
 
-  def initialize(type)
-    @type = type
+  def initialize(rank, suit)
+    @rank = rank
+    @suit = suit
   end
 end
+
+
