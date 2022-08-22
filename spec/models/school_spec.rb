@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-
 RSpec.describe School do
   it 'has a name' do
     school = School.new('Beverly Hills High School')

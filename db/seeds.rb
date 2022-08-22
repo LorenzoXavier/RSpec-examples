@@ -2,6 +2,7 @@ puts "You're in the seeding file"
 Tile.destroy_all
 puts "All previous tiles have been removed"
 
+
 tile = Tile.new(
   title: "Card model RSpec checks",
   model_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/app/models/card.rb",
@@ -19,3 +20,20 @@ tile = Tile.new(
 )
 puts "Tile created: '#{tile.title}'"
 tile.save!
+
+tile = Tile.new(
+  title: "Basic School Model with relating spec file",
+  model_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/app/models/school.rb",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/school_spec.rb",
+  body: "<p>Basic initializing of School class with 2 tests</p>
+    <ul>
+      <li>First: Create a new School object and checked the name is stored</li>
+      <li>Second: Create new school object with no students</li>
+    </ul>
+    <p>To run the spec file for the Card model, run: <br>
+    <strong>$ rspec ./spec/models/school_spec.rb</strong></p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
