@@ -22,6 +22,18 @@ puts "Tile created: '#{tile.title}'"
 tile.save!
 
 tile = Tile.new(
+  title: "Nesting using describe and context",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/context_spec.rb",
+  body: "<p>Nesting a basic Class Method test using describe and context</p>
+    <p>To run the spec file for the Card model, run: <br>
+    <strong>$ rspec ./spec/models/context_spec.rb</strong></p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "Basic School Model with relating spec file",
   model_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/app/models/school.rb",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/school_spec.rb",
