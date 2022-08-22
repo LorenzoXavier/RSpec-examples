@@ -1,7 +1,18 @@
-<div class="container">
-  <div class="card">
-    <div class="card-header">
-      hello
-    </div>
+<div class="container pt-3">
+  <div class="row">
+    <% @tiles.each do |tile| %>
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <%= tile.title %>
+          </div>
+          <div class="card-body">
+            <p>Description: <%= tile.body %></p>
+            <p>Model link: <%= link_to "click to view model on github", tile.model_link, target: :_blank %></p>
+            <p>Spec link: <%= link_to "click to view spec on github", tile.spec_link, target: :_blank %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
