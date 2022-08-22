@@ -1,7 +1,12 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+puts "You're in the seeding file"
+Tile.destroy_all
+puts "All previous tiles have been removed"
+
+tile = Tile.new(
+  title: "Card model RSpec checks",
+  model_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/app/models/card.rb",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/card_spec.rb",
+  body: "Run rake to see this working"
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
