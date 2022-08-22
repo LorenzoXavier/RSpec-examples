@@ -10,13 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_21_130223) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_22_112239) do
   create_table "cards", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "schools", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tiles", force: :cascade do |t|
+    t.string "model_link"
+    t.string "spec_link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
