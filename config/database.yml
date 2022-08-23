@@ -110,7 +110,7 @@ test:
 #
 production:
   <<: *default
-  database: rspec-course_production
+   database: rspec-course_production
   username: rspec-course
-  password: <%= ENV['rspec-course_DATABASE_PASSWORD'] %>
+  password: <%= ENV['RSPEC-COURSE_DATABASE_PASSWORD'] %>
 
