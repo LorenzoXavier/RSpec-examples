@@ -3,6 +3,18 @@ Tile.destroy_all
 puts "All previous tiles have been removed"
 
 tile = Tile.new(
+  title: "Explicit subject",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/explicit_subject_spec.rb",
+  body: "<p>Playing with explicit subject, in this instance defining the subject(:bob) as the Hash</p>
+    <p>To run the spec file for the overwriting_let model, run: <br>
+    <strong>$ rspec ./spec/models/explicit_subject_spec.rb</strong></p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "Implicit subject",
   model_link: "",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/implicit_subject_spec.rb",
