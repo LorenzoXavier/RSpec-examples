@@ -3,6 +3,38 @@ Tile.destroy_all
 puts "All previous tiles have been removed"
 
 tile = Tile.new(
+  title: "Equality matchers",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/equality_matchers_spec.rb",
+  body: "<p>Demonstarting the difference between <strong>eg<br>egl<br>equal/be</strong></p>
+    <ul>
+      <li>the eq matcher will test for value, but not the type. So although you are comparing a float to an integer, the mathmatical value of both is the same</li>
+      <li>the eql matcher checks the type as well as value, so we have to put not_to in order to pass the test. 3 != 3.0</li>
+      <li>the equal matcher has an alias of be (exactly the same)
+        Equal and be will look at the identifier as well as the value of the object
+        Although the value of the array is the same, they are not identicle objects, as they are stored in different places in the DB
+        Think of it in the way that you can have 2 houses next to each other that are the same, althouh they are both indivdual in terms of address</li>
+    </ul>
+    <p>To run the spec file for the overwriting_let model, run: <br>
+    <strong>$ rspec ./spec/models/equality_matchers_spec.rb</strong></p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
+  title: "not_to method",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/not_to_method_spec.rb",
+  body: "<p>Demonstarting the use of the not_to method, with works the opposite of the to method. I.e <strong>expect(5).not_to eg(1) </strong> would return 5 != 1</p>
+    <p>To run the spec file for the overwriting_let model, run: <br>
+    <strong>$ rspec ./spec/models/not_to_method_spec.rb</strong></p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "Shared context",
   model_link: "",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/shared_context_spec.rb",
