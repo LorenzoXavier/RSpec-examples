@@ -3,6 +3,18 @@ Tile.destroy_all
 puts "All previous tiles have been removed"
 
 tile = Tile.new(
+  title: "Described Class",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/described_class_spec.rb",
+  body: "<p>described_class is referenceing whatever class is under test (in this case King)<br>This means you do not have to change all the occurances on the class calls, as this approach is dynamic - making it dynamic if you make changes</p>
+    <p>To run the spec file for the overwriting_let model, run: <br>
+    <strong>$ rspec ./spec/models/described_class_spec.rb</strong></p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "Explicit subject",
   model_link: "",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/explicit_subject_spec.rb",
