@@ -3,6 +3,18 @@ Tile.destroy_all
 puts "All previous tiles have been removed"
 
 tile = Tile.new(
+  title: "Shared examples",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/shared_examples_spec.rb",
+  body: "<p>Drying up the code by creating a shared_examples test that we can call using include_examples. This means you can write one test that can be re called where needed - similar to defining methods in the helper</p>
+    <p>To run the spec file for the overwriting_let model, run: <br>
+    <strong>$ rspec ./spec/models/shared_examples_spec.rb</strong></p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "One liner syntax",
   model_link: "",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/one_liner_syntax_spec.rb",
