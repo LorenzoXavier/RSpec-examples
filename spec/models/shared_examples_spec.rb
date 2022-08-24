@@ -48,3 +48,4 @@ RSpec.describe SausageLink do
   #   expect(subject.length).to eq(3)
   # end
 end
+
