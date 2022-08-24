@@ -3,6 +3,18 @@ Tile.destroy_all
 puts "All previous tiles have been removed"
 
 tile = Tile.new(
+  title: "Shared context",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/shared_context_spec.rb",
+  body: "<p>Defining a shared helper. In this example it is called 'common'. You can see how you can make a globally accessible helper using <strong>RSpec.shared_context</strong>, and then call access to it by writting <strong>include_context 'common'</strong> within your test.</p>
+    <p>To run the spec file for the overwriting_let model, run: <br>
+    <strong>$ rspec ./spec/models/shared_context_spec.rb</strong></p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "Shared examples",
   model_link: "",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/shared_examples_spec.rb",
