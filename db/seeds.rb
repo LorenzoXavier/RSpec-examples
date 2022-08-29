@@ -3,6 +3,17 @@ Tile.destroy_all
 puts "All previous tiles have been removed"
 
 tile = Tile.new(
+  title: "All matcher",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/all_matcher_spec.rb",
+  body: "<p>Refining code using the <strong>all matcher.</strong> <br>This works the same as calling <strong>.each do</strong> method 
+    </p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "predicate methods",
   model_link: "",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/predicate_methods_spec.rb",
