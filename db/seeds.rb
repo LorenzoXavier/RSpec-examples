@@ -3,10 +3,24 @@ Tile.destroy_all
 puts "All previous tiles have been removed"
 
 tile = Tile.new(
+  title: "raise_error matcher",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/raise_error_matcher_spec.rb",
+  body: "<p>Pre defining expected errors using the raise_error matcher<br>
+  Defining a sub class that inherits from rubys standard error class and runnning an expect block to rise this error<br>
+  <br>To run the spec file for the overwriting_let model, run: <br>
+    <strong>$ rspec ./spec/models/raise_error_matcher_spec.rb</strong>
+  </p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "include matcher",
   model_link: "",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/include_matcher_spec.rb",
-  body: "<p><strong>Check weather an object includes something</strong>. Examples include running tests on hashes, arrays and strings
+  body: "<p><strong>Check weather an object includes something</strong>. <br>Examples include running tests on hashes, arrays and strings
   <br>To run the spec file for the overwriting_let model, run: <br>
     <strong>$ rspec ./spec/models/include_matcher_spec.rb</strong>
   </p>
