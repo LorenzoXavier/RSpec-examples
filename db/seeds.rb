@@ -3,6 +3,24 @@ Tile.destroy_all
 puts "All previous tiles have been removed"
 
 tile = Tile.new(
+  title: "respond_to matcher",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/respond_to_matcher_spec.rb",
+  body: "<p>
+  <ul>
+    <li>Defined methods on a class of HotChocolate</li>
+    <li>confirms that an object can respond to a method</li>
+    <li>confirms an object can respond to a method with arguments</li>
+  </ul>
+  <br>To run the spec file for the overwriting_let model, run: <br>
+    <strong>$ rspec ./spec/models/respond_to_matcher_spec.rb</strong>
+  </p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "raise_error matcher",
   model_link: "",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/raise_error_matcher_spec.rb",
