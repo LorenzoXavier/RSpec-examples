@@ -3,6 +3,19 @@ Tile.destroy_all
 puts "All previous tiles have been removed"
 
 tile = Tile.new(
+  title: "change matcher",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/change_matcher_spec.rb",
+  body: "<p>Checking that something changes as a result of method invocation.<br>I.e if you remove an element from an array, the count will change by one in length
+  <br>To run the spec file for the overwriting_let model, run: <br>
+    <strong>$ rspec ./spec/models/change_matcher_spec.rb</strong>
+  </p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "be matcher",
   model_link: "",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/be_matcher_spec.rb",
