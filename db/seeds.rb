@@ -18,10 +18,6 @@ tile = Tile.new(
 puts "Tile created: '#{tile.title}'"
 tile.save!
 
-puts "You're in the seeding file"
-Tile.destroy_all
-puts "All previous tiles have been removed"
-
 tile = Tile.new(
   title: "not_to method exampler",
   model_link: "",
