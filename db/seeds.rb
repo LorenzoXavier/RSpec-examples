@@ -3,6 +3,20 @@ Tile.destroy_all
 puts "All previous tiles have been removed"
 
 tile = Tile.new(
+  title: "not_to method exampler",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/not_to_spec.rb",
+  body: "<p>
+  A whole load of not_to method matcher examples
+  <br>To run the spec file for the overwriting_let model, run: <br>
+    <strong>$ rspec ./spec/models/not_to_spec.rb</strong>
+  </p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "satisfy matcher",
   model_link: "",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/satisfy_matcher_spec.rb",
