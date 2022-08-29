@@ -3,11 +3,27 @@ Tile.destroy_all
 puts "All previous tiles have been removed"
 
 tile = Tile.new(
+  title: "predicate methods",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/predicate_methods_spec.rb",
+  body: "<p>Working with predicate methods to use RSpec under the hood magic.<br>
+    E.g : you can change: <br>
+    result = 16/2<br>
+    expect(result.even?).to eq(true)<br>
+    to: <br>
+    expect(16 / 2).to be_even
+    <strong>$ rspec ./spec/models/predicate_methods_spec.rb</strong></p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "comparison matchers",
   model_link: "",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/main/spec/models/comparison_matchers_spec.rb",
-  body: "<p>Using comparisons such as < > <= >=</p>"
-    <p>To run the spec file for the overwriting_let model, run: <br>
+  body: "<p>Using comparisons such as < > <= >=<br>
+    To run the spec file for the overwriting_let model, run: <br>
     <strong>$ rspec ./spec/models/comparison_matchers_spec.rb</strong></p>
   "
 )
