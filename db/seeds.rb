@@ -3,6 +3,19 @@ Tile.destroy_all
 puts "All previous tiles have been removed"
 
 tile = Tile.new(
+  title: "have_attributes matcher",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/have_attriubtes_matcher_spec.rb",
+  body: "<p>Checking that an object has specific atttributes by envoking a new object and running <strong>have_attributes</strong> on it
+  <br>To run the spec file for the overwriting_let model, run: <br>
+    <strong>$ rspec ./spec/models/have_attriubtes_matcher_spec.rb</strong>
+  </p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "start_with and end_with matchers",
   model_link: "",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/start_with_and_end_with_matchers_spec.rb",
