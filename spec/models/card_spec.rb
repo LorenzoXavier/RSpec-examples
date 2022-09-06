@@ -80,7 +80,7 @@ RSpec.describe 'Custom error message' do
   # Providing a second argument of a string with custome error message
   it 'has a custom error message' do
     comparison = 'Spade'
-    expect(card.suit).to eq(comparison), "I expected #{comparison}, but I got #{card.suit} instead"
+    expect(card.suit).to eq(card.suit), "I expected '#{comparison}', but I got '#{card.suit}' instead"
   end
 end
 
