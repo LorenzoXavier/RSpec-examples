@@ -1,4 +1,6 @@
-# Checks that array includes certain pre defined elements. 
+# frozen_string_literal: true
+
+# Checks that array includes certain pre defined elements.
 # It isn't concerned if it is in a particular order, just that all excist
 RSpec.describe 'contain_exactly matcher' do
   subject { [1, 2, 3] }

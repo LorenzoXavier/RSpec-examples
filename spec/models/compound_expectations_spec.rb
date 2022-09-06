@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 25 do
   it 'can test for multiple matchers' do
     expect(subject).to be_odd
@@ -5,12 +7,11 @@ RSpec.describe 25 do
 
     # following line works like && by adding .add method
     expect(subject).to be_odd.and be > 20
-
   end
 
   # shortened syntax
   describe 'can test for multiple matchers using shortened syntax' do
-    it { is_expected.to be_odd and be > 20}
+    it { is_expected.to be_odd and be > 20 }
   end
 end
 

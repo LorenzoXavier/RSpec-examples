@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe '#even? method' do
   # this will nest the describe blocks below
   describe 'with even number' do

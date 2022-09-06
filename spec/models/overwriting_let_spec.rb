@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ProgrammingLanguage
   attr_reader :name
 
@@ -22,5 +24,4 @@ RSpec.describe ProgrammingLanguage do
       expect(language.name).to eq('Ruby')
     end
   end
-
 end

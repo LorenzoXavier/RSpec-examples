@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'not to method' do
   it 'checks for the inverse of a matcher' do
     expect(5).not_to eq(10)
@@ -13,7 +15,7 @@ RSpec.describe 'not to method' do
 
     expect(5).not_to respond_to(:length)
 
-    expect([:a, :b, :c]).not_to include(:d)
+    expect(%i[a b c]).not_to include(:d)
 
     expect { 11 / 3 }.not_to raise_error
   end

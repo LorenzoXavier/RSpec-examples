@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 # method that returns a boolean value"
 RSpec.describe 'predicate methods and predicate matchers' do
   it 'can be tested with Ruby methods' do
-    result = 16/2
+    result = 16 / 2
     expect(result.even?).to eq(true)
   end
 
@@ -19,4 +21,3 @@ RSpec.describe 'predicate methods and predicate matchers' do
     it { is_expected.to be_zero }
   end
 end
-

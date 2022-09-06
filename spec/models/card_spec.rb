@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 # if you reference the class - rather than a string - it will create a connection and put helper settings in place automatically
@@ -61,8 +63,6 @@ RSpec.describe 'Creating card using the Let helper method' do
 end
 
 RSpec.describe 'Custom error message' do
-
-
   let(:card) { Card.new('Ace', 'Spades') }
 
   it 'has a rank and the rank can change and mutating' do
@@ -74,7 +74,7 @@ RSpec.describe 'Custom error message' do
   end
 
   it 'is not nil' do
-    expect(card) != nil
+    !expect(card).nil?
   end
 
   # Providing a second argument of a string with custome error message
@@ -83,6 +83,3 @@ RSpec.describe 'Custom error message' do
     expect(card.suit).to eq(card.suit), "I expected '#{comparison}', but I got '#{card.suit}' instead"
   end
 end
-
-
-

@@ -1,4 +1,6 @@
-# emulating 
+# frozen_string_literal: true
+
+# emulating
 # imagine the double() works as a stunt double - not the same but imitating
 # passing a hash that defines a method and a return
 RSpec.describe 'a random double' do

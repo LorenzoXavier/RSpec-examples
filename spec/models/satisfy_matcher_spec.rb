@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'satisfy matcher' do
   subject { 'racecar' }
 

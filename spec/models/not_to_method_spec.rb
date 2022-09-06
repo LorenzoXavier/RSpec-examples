@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # checks for inverse or the negative of given matrix
 
 RSpec.describe 'not_to method' do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Card
   attr_accessor :rank, :suit
 
@@ -6,5 +8,3 @@ class Card
     @suit = suit
   end
 end
-
-

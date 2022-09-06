@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # everything except false or nil is truthy in ruby langauge
 RSpec.describe 'be matchers' do
   it 'will be truthy' do

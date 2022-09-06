@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'Nested hooks' do
   # try to work out how this works logically
   # run the RSpec and you'll see how the code is worked through, going through the top level first and then climbing in and out of the nested...
@@ -32,5 +34,4 @@ RSpec.describe 'Nested hooks' do
       expect(2 - 1).to eq(1)
     end
   end
-
 end

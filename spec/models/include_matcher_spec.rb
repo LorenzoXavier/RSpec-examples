@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'include matcher' do
   describe 'hot chocolate' do
     it 'checks for substring inclusion' do
@@ -22,7 +24,7 @@ RSpec.describe 'include matcher' do
   end
 
   # checking a key excists
-  describe ({a: 2, b: 4}) do
+  describe({ a: 2, b: 4 }) do
     it 'can check for key existance' do
       expect(subject).to include(:a)
       expect(subject).to include(:a, :b)

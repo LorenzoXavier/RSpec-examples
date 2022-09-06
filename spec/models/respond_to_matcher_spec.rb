@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # verify that an object can respond_to a given method
 class HotChocolate
   def drink
@@ -5,7 +7,7 @@ class HotChocolate
   end
 
   def discard
-    'PLOP'    
+    'PLOP'
   end
 
   def purchase(number)

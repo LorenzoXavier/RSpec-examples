@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'change matcher' do
   subject { [1, 2, 3] }
 

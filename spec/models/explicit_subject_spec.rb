@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 RSpec.describe Hash do
   # the advantage of using subject over
   # let(:bob) { a:1, b:2 }
   # is that it gives you access to RSpec syntax that we will get onto later in the training
   subject(:bob) do
-    { a:1, b:2 }
+    { a: 1, b: 2 }
   end
 
   it 'has two key-value pairs' do
@@ -21,7 +23,7 @@ end
 
 RSpec.describe Array do
   subject(:sally) do
-    [ 1, 2 ]
+    [1, 2]
   end
 
   it 'has an array, with 2 elements, using pop to remove one' do

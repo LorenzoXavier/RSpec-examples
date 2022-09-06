@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # shared examples to dry up code
 # see RSpec shared example replaces the it block in every following example
 
@@ -17,7 +19,7 @@ RSpec.describe Array do
 end
 
 RSpec.describe String do
-  subject { "abc" }
+  subject { 'abc' }
 
   include_examples 'a Ruby object with a length method that returns three'
   # it 'returns the correct number of items' do
@@ -26,7 +28,7 @@ RSpec.describe String do
 end
 
 RSpec.describe Hash do
-  subject { {a:1, b:2, c:3 }}
+  subject { { a: 1, b: 2, c: 3 } }
 
   include_examples 'a Ruby object with a length method that returns three'
   # it 'returns the correct number of items' do
@@ -48,4 +50,3 @@ RSpec.describe SausageLink do
   #   expect(subject.length).to eq(3)
   # end
 end
-
