@@ -3,6 +3,29 @@ Tile.destroy_all
 puts "All previous tiles have been removed"
 
 tile = Tile.new(
+  title: "Use of the double method",
+  model_link: "",
+  spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/double_spec.rb",
+  body: "<p>
+  In this test, I am working with the <strong>double()</strong> method<br>
+  double() works in the same way a stunt double does in the movies. It's a way of imitating that gives you the ability to test<br>
+  In the example, I do the following:<br>
+  <ul>
+    <li>create a variable of stuntman that creates a new object - passing a hash of two methods and their return values.<br>I then run tests to call the method and ensure the correct return</li>
+    <li>Introducing new syntax utilizing methods to shorten syntax<br><br>
+    <pre>allow(stuntman).to receive(:fall_off_ladder).and_return('Ouch')<br><br></pre>
+    </li>
+    <li>The same sytax as the previous, but calling receive_messages() to add multiple methods and returns - like in example one</li>
+  </ul>
+  <br>To run the spec file for the overwriting_let model, run: <br>
+    <strong>$ rspec ./spec/models/double_spec.rb</strong>
+  </p>
+  "
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: "compound_expectations matchers",
   model_link: "",
   spec_link: "https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/compound_expectations_spec.rb",
