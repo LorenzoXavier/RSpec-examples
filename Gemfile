@@ -82,4 +82,3 @@ group :test do
   gem 'webdrivers'
 end
 
-gem 'code-scanning-rubocop', '= 0.3.0'

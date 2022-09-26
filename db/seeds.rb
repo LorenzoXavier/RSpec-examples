@@ -19,7 +19,7 @@ tile = Tile.new(
     </li>
     <li>The same sytax as the previous, but calling receive_messages() to add multiple methods and returns - like in example one</li>
   </ul>
-  <br>To run the spec file for the overwriting_let model, run: <br>
+  <br>To run the spec file for the double_spec model, run: <br>
     <strong>$ rspec ./spec/models/double_spec.rb</strong>
   </p>
   "
@@ -35,7 +35,7 @@ tile = Tile.new(
   Use of <strong>.and</strong> and <strong>.or</strong> matchers to chain multible expecations together.<br>
   .and works the same as && when writing queries <br>
   .or works the same as || when writing queries <br>
-  <br>To run the spec file for the overwriting_let model, run: <br>
+  <br>To run the spec file for the compound_expectations model, run: <br>
     <strong>$ rspec ./spec/models/compound_expectations_spec.rb</strong>
   </p>
   "
@@ -49,7 +49,7 @@ tile = Tile.new(
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/not_to_spec.rb',
   body: "<p>
   A whole load of not_to method matcher examples
-  <br>To run the spec file for the overwriting_let model, run: <br>
+  <br>To run the spec file for the not_to model, run: <br>
     <strong>$ rspec ./spec/models/not_to_spec.rb</strong>
   </p>
   "
@@ -64,7 +64,7 @@ tile = Tile.new(
   body: "<p>
   This fantastic mathcher gives you the anility to custom an error message by putting a string in parenthesis after calling satisfy()<br>
   You then enter a do block to define what needs to be satisfied
-  <br>To run the spec file for the overwriting_let model, run: <br>
+  <br>To run the spec file for the satisfy_matcher model, run: <br>
     <strong>$ rspec ./spec/models/satisfy_matcher_spec.rb</strong>
   </p>
   "
@@ -82,7 +82,7 @@ tile = Tile.new(
     <li>confirms that an object can respond to a method</li>
     <li>confirms an object can respond to a method with arguments</li>
   </ul>
-  <br>To run the spec file for the overwriting_let model, run: <br>
+  <br>To run the spec file for the respond_to_matcher model, run: <br>
     <strong>$ rspec ./spec/models/respond_to_matcher_spec.rb</strong>
   </p>
   "
@@ -96,7 +96,7 @@ tile = Tile.new(
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/raise_error_matcher_spec.rb',
   body: "<p>Pre defining expected errors using the raise_error matcher<br>
   Defining a sub class that inherits from rubys standard error class and runnning an expect block to rise this error<br>
-  <br>To run the spec file for the overwriting_let model, run: <br>
+  <br>To run the spec file for the raise_error_matcher model, run: <br>
     <strong>$ rspec ./spec/models/raise_error_matcher_spec.rb</strong>
   </p>
   "
@@ -109,7 +109,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/include_matcher_spec.rb',
   body: "<p><strong>Check weather an object includes something</strong>. <br>Examples include running tests on hashes, arrays and strings
-  <br>To run the spec file for the overwriting_let model, run: <br>
+  <br>To run the spec file for the include_matcher model, run: <br>
     <strong>$ rspec ./spec/models/include_matcher_spec.rb</strong>
   </p>
   "
@@ -122,7 +122,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/have_attributes_matcher_spec.rb',
   body: "<p>Checking that an object has specific atttributes by envoking a new object and running <strong>have_attributes</strong> on it
-  <br>To run the spec file for the overwriting_let model, run: <br>
+  <br>To run the spec file for the have_attributes_matcher model, run: <br>
     <strong>$ rspec ./spec/models/have_attributes_matcher_spec.rb</strong>
   </p>
   "
@@ -135,7 +135,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/start_with_and_end_with_matchers_spec.rb',
   body: "<p>Check that an array <strong>starts with</strong> or <strong>ends with </strong>specific elements
-  <br>To run the spec file for the overwriting_let model, run: <br>
+  <br>To run the spec file for the start_with_and_end_with_matchers model, run: <br>
     <strong>$ rspec ./spec/models/start_with_and_end_with_matchers_spec.rb</strong>
   </p>
   "
@@ -148,7 +148,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/contain_exactly_matcher_spec.rb',
   body: "<p>Checking that an array <strong>contains exactly</strong> a group of elements
-  <br>To run the spec file for the overwriting_let model, run: <br>
+  <br>To run the spec file for the contain_exactly_matcher model, run: <br>
     <strong>$ rspec ./spec/models/contain_exactly_matcher_spec.rb</strong>
   </p>
   "
@@ -161,7 +161,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/change_matcher_spec.rb',
   body: "<p>Checking that something changes as a result of method invocation.<br>I.e if you remove an element from an array, the count will change by one in length
-  <br>To run the spec file for the overwriting_let model, run: <br>
+  <br>To run the spec file for the change_matcher model, run: <br>
     <strong>$ rspec ./spec/models/change_matcher_spec.rb</strong>
   </p>
   "
@@ -174,7 +174,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/be_matcher_spec.rb',
   body: "<p>Checking for <strong>Truthy or falsy</strong> by calling the <strong>be matcher</strong>
-  <br>To run the spec file for the overwriting_let model, run: <br>
+  <br>To run the spec file for the be_matcher model, run: <br>
     <strong>$ rspec ./spec/models/be_matcher_spec.rb</strong>
   </p>
   "
@@ -187,7 +187,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/all_matcher_spec.rb',
   body: "<p>Refining code using the <strong>all matcher.</strong> <br>This works the same as calling <strong>.each do</strong> method
-  <br>To run the spec file for the overwriting_let model, run: <br>
+  <br>To run the spec file for the all_matcher model, run: <br>
     <strong>$ rspec ./spec/models/all_matcher_spec.rb</strong></p>
   "
 )
@@ -204,7 +204,7 @@ tile = Tile.new(
     expect(result.even?).to eq(true)<br>
     to: <br>
     expect(16 / 2).to be_even
-    <br>To run the spec file for the overwriting_let model, run: <br>
+    <br>To run the spec file for the predicate_methods model, run: <br>
     <strong>$ rspec ./spec/models/predicate_methods_spec.rb</strong></p>
   "
 )
@@ -216,7 +216,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/comparison_matchers_spec.rb',
   body: "<p>Using comparisons such as < > <= >=<br>
-    To run the spec file for the overwriting_let model, run: <br>
+    To run the spec file for the comparison_matchers model, run: <br>
     <strong>$ rspec ./spec/models/comparison_matchers_spec.rb</strong></p>
   "
 )
@@ -236,7 +236,7 @@ tile = Tile.new(
         Although the value of the array is the same, they are not identicle objects, as they are stored in different places in the DB
         Think of it in the way that you can have 2 houses next to each other that are the same, althouh they are both indivdual in terms of address</li>
     </ul>
-    <p>To run the spec file for the overwriting_let model, run: <br>
+    <p>To run the spec file for the equality_matchers model, run: <br>
     <strong>$ rspec ./spec/models/equality_matchers_spec.rb</strong></p>
   "
 )
@@ -248,7 +248,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/not_to_method_spec.rb',
   body: "<p>Demonstarting the use of the not_to method, with works the opposite of the to method. I.e <strong>expect(5).not_to eg(1) </strong> would return 5 != 1</p>
-    <p>To run the spec file for the overwriting_let model, run: <br>
+    <p>To run the spec file for the not_to_method model, run: <br>
     <strong>$ rspec ./spec/models/not_to_method_spec.rb</strong></p>
   "
 )
@@ -260,7 +260,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/shared_context_spec.rb',
   body: "<p>Defining a shared helper. In this example it is called 'common'. You can see how you can make a globally accessible helper using <strong>RSpec.shared_context</strong>, and then call access to it by writting <strong>include_context 'common'</strong> within your test.</p>
-    <p>To run the spec file for the overwriting_let model, run: <br>
+    <p>To run the spec file for the shared_context model, run: <br>
     <strong>$ rspec ./spec/models/shared_context_spec.rb</strong></p>
   "
 )
@@ -272,7 +272,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/shared_examples_spec.rb',
   body: "<p>Drying up the code by creating a shared_examples test that we can call using include_examples. This means you can write one test that can be re called where needed - similar to defining methods in the helper</p>
-    <p>To run the spec file for the overwriting_let model, run: <br>
+    <p>To run the spec file for the shared_examples model, run: <br>
     <strong>$ rspec ./spec/models/shared_examples_spec.rb</strong></p>
   "
 )
@@ -284,7 +284,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/one_liner_syntax_spec.rb',
   body: "<p>Refactroing code to make the it test one line rather than three</p>
-    <p>To run the spec file for the overwriting_let model, run: <br>
+    <p>To run the spec file for the one_liner_syntax model, run: <br>
     <strong>$ rspec ./spec/models/one_liner_syntax_spec.rb</strong></p>
   "
 )
@@ -296,7 +296,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/described_class_spec.rb',
   body: "<p>described_class is referenceing whatever class is under test (in this case King)<br>This means you do not have to change all the occurances on the class calls, as this approach is dynamic - making it dynamic if you make changes</p>
-    <p>To run the spec file for the overwriting_let model, run: <br>
+    <p>To run the spec file for the described_class model, run: <br>
     <strong>$ rspec ./spec/models/described_class_spec.rb</strong></p>
   "
 )
@@ -308,7 +308,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/explicit_subject_spec.rb',
   body: "<p>Playing with explicit subject, in this instance defining the subject(:bob) as the Hash</p>
-    <p>To run the spec file for the overwriting_let model, run: <br>
+    <p>To run the spec file for the explicit_subject model, run: <br>
     <strong>$ rspec ./spec/models/explicit_subject_spec.rb</strong></p>
   "
 )
@@ -320,7 +320,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/implicit_subject_spec.rb',
   body: "<p>Playing with implicit subject as defined after describe in the test</p>
-    <p>To run the spec file for the overwriting_let model, run: <br>
+    <p>To run the spec file for the implicit_subject model, run: <br>
     <strong>$ rspec ./spec/models/implicit_subject_spec.rb</strong></p>
   "
 )
@@ -344,7 +344,7 @@ tile = Tile.new(
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/nested_hooks_spec.rb',
   body: "<p>Understanding how nested hooks are read</p>
-    <p>To run the spec file for the before_and_afeter model, run: <br>
+    <p>To run the spec file for the nested_hooks model, run: <br>
     <strong>$ rspec ./spec/models/nested_hooks_spec.rb</strong></p>
   "
 )
@@ -362,7 +362,7 @@ tile = Tile.new(
       <li>after(:example) # run after each example</li>
       <li>after(:context) # run one time only, after all of the examples in a group</li>
     </ul>
-    <p>To run the spec file for the before_and_afeter model, run: <br>
+    <p>To run the spec file for the before_and_after model, run: <br>
     <strong>$ rspec ./spec/models/before_and_after_spec.rb</strong></p>
   "
 )
