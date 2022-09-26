@@ -30,6 +30,7 @@ tile.save!
 tile = Tile.new(
   title: 'compound_expectations matchers',
   model_link: '',
+  
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/compound_expectations_spec.rb',
   body: "<p>
   Use of <strong>.and</strong> and <strong>.or</strong> matchers to chain multible expecations together.<br>
