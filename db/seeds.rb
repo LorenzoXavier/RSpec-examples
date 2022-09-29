@@ -5,6 +5,18 @@ Tile.destroy_all
 puts 'All previous tiles have been removed'
 
 tile = Tile.new(
+  title: 'Useing the RSpec double method to run tests on class method calls',
+  model_link: '',
+  spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/movie_spec.rb',
+  body: "<p>
+  In this test, I am working with the <strong>double()</strong> method to test methods on the described_class<br>
+  movie()
+  <p/>"
+)
+puts "Tile created: '#{tile.title}'"
+tile.save!
+
+tile = Tile.new(
   title: 'Use of the double method',
   model_link: '',
   spec_link: 'https://github.com/LorenzoXavier/RSpec-examples/blob/master/spec/models/double_spec.rb',
